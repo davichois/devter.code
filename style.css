@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+*::before *::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --dark-color: #1c1e27;
+  --dark-color-afly: #1c1e27ea;
+}
+
+body {
+  background-color: var(--dark-color-afly);
+  color: #333;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  display: grid;
+  gap: 3px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+}
+
+iframe {
+  background-color: white;
+  border: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 100%;
+  width: 100%;
+}
+
+textarea {
+  border: 1px solid var(--dark-color-afly);
+  color: rgb(237, 237, 237);
+  background-color: var(--dark-color);
+  font-family: monospace;
+  font-weight: 800;
+  height: 100%;
+  outline: none;
+  padding: 20px;
+  resize: none;
+  width: 100%;
+}
