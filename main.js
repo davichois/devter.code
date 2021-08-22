@@ -14,6 +14,7 @@ $js.addEventListener("input", update);
 
 function update() {
   const html = createHtml();
+
   getEl("iframe").setAttribute("srcdoc", html);
 }
 
