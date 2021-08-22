@@ -55,3 +55,7 @@ textarea {
   resize: none;
   width: 100%;
 }
+
+.default{
+  font-family: monospace;
+}
